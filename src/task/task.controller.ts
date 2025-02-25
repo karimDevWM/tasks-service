@@ -9,7 +9,7 @@ export class TaskMicroserviceController {
   @MessagePattern({ cmd: 'createTask' })
   createTask(@Payload() createTaskDto: CreateTaskDto) {
     console.log(
-      'received creation task request into task microservice :',
+      'received creation task request into task microservices :',
       createTaskDto,
     );
     return this.taskService.createTask(createTaskDto);
