@@ -9,8 +9,8 @@ import { TaskModule } from './task/task.module';
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'mysql_db',
-      username: 'testuser',
-      password: 'testuser123',
+      username: 'root',
+      password: 'example',
       port: 3306,
       database: 'nestjsnatsauth_db',
       entities: [Task],
