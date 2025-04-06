@@ -23,8 +23,8 @@ export class Task {
   @Column({ type: 'timestamp', nullable: true })
   completionDate: Date | null;
 
-  @Column()
-  userId: string;
+  // @Column()
+  // userId: string;
 
   // @OneToMany(() => Item, (item) => item.taskId)
   // items: Item[];
